@@ -46,7 +46,7 @@
   b. Copy from the first `-----BEGIN CERTIFICATE-----` until the first `-----END CERTIFICATE-----` into `certificate.pem`  
   c. Copy from the second `-----BEGIN CERTIFICATE-----` until the second `-----END CERTIFICATE-----` into `certificate-authority.pem`
 1. `openssl smime -sign -signer ./certificate.pem -inkey ./private-key.pem -certfile ./certificate-authority.pem -nodetach -outform der -in ./udid_unsigned.mobileconfig -out ./udid.mobileconfig`  
-  a. Signs your `.mobileconfig` file so users will see a green `Valid`
+  a. Signs your `.mobileconfig` file so users will see a green `Verified`
 1. `sudo vi /etc/systemd/system/udid.service`  
   a. Creates config file for a `systemd` service that will start on startup/crash  
   b. See `Sample SystemD config file` section for sample config
