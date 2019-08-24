@@ -27,7 +27,6 @@
   a. [Online UUID generator](https://www.uuidgenerator.net/version4)
 1. Replace `12345678-1234-1234-1234-1234567890ab` with your generated UUID  
   a. `udid_unsigned.mobileconfig`:`21`
-1. Open `Terminal`/`bash`/`Git bash`/`Conemu`/etc  
 1. `GOARCH=amd64 GOOS=linux go build -o udid`  
   a. `go build` [documentation](https://golang.org/cmd/go/#hdr-Compile_packages_and_dependencies)  
   b. [valid `GOARCH` + `GOOS` combinations](https://golang.org/doc/install/source#environment)
