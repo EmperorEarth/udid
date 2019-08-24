@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <dict>
+            <key>URL</key>
+            <string>https://subdomain.domain.tld/upload</string>
+            <key>DeviceAttributes</key>
+            <array>
+                <string>UDID</string>
+            </array>
+        </dict>
+        <key>PayloadOrganization</key>
+        <string>UDID Retriever</string>
+        <key>PayloadDisplayName</key>
+        <string>UDID Reader</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadUUID</key>
+        <string>12345678-1234-1234-1234-1234567890ab</string>
+        <key>PayloadIdentifier</key>
+        <string>com.udid.mobileconfig.profile-service</string>
+        <key>PayloadDescription</key>
+        <string>Install to read your device's UDID (required to join an iOS Ad-Hoc app release).</string>
+        <key>PayloadType</key>
+        <string>Profile Service</string>
+    </dict>
+</plist>
