@@ -23,6 +23,7 @@
   a. `main.go`:`23`  
   b. `udid_unsigned.mobileconfig`:`8` (keep `/upload`)
 1. Generate a UUID  
+  a. [Online UUID generator](https://www.uuidgenerator.net/version4)
 1. Replace `12345678-1234-1234-1234-1234567890ab` with your generated UUID  
   a. `udid_unsigned.mobileconfig`:`21`
 1. Open `Terminal`/`bash`/`Git bash`/`Conemu`/etc  
@@ -40,7 +41,7 @@
 1. Navigate to `subdomain.domain.tld/foo` adjust URL (keep `/foo`)  
   a. Encourages server to generate TLS certificate faster
 1. Refresh until browser receives valid TLS certificate (locked lock icon left of URL in Chrome)  
-1. `ls certificates` should show a new file `subdomain.domain.tld`  
+1. `ls certificates/` should show a new file `subdomain.domain.tld`  
 1. Using whichever text editor you prefer, copy parts of `certiticates/subdomain.domain.tld` into various files  
   a. Copy from `-----BEGIN EC PRIVATE KEY-----` until `-----END EC PRIVATE KEY-----` into `private-key.pem`  
   b. Copy from the first `-----BEGIN CERTIFICATE-----` until the first `-----END CERTIFICATE-----` into `certificate.pem`  
