@@ -58,7 +58,7 @@
 1. Navigate to `subdomain.domain.tld` on an iPhone  
 
 ## Sample SystemD config file
-* Replace `devops` with VPS username
+* Replace `username` with VPS username
 ```
 [Unit]
 Description=UDID service
@@ -67,8 +67,8 @@ After=systemd-user-sessions.service
 After=network-online.target
 
 [Service]
-WorkingDirectory=/home/devops
-ExecStart=/home/devops/udid
+WorkingDirectory=/home/username
+ExecStart=/home/username/udid
 ExecStop=/usr/bin/pkill udid
 Restart=on-failure
 RestartSec=30
