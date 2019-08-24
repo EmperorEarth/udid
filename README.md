@@ -12,6 +12,7 @@
 * Sorry, I don't have the bandwidth
 * Forks/maintainers welcome
 
+1. `git clone https://github.com/EmperorEarth/udid && cd udid`
 1. Create VPS  
   a. Digitalocean Droplet, AWS EC2, etc  
   b. Recommend 18.04 LTS amd64 if using Ubuntu
@@ -32,10 +33,9 @@
   b. [valid `GOARCH` + `GOOS` combinations](https://golang.org/doc/install/source#environment)
 1. `sftp`/`psftp` to VPS  
 1. `put`/`mput` `udid` binary and `udid_unsigned.mobileconfig`  
-1. `sudo setcap 'cap_net_bind_service=+ep' ./udid`  
-  a. Allows server binary to bind to 80 & 443 (and other privileged ports < 1024)
-1. `chmod 500 ./udid`  
-  a. Changes server binary permissions to read/execute by logged in user
+1. `sudo setcap 'cap_net_bind_service=+ep' ./udid && chmod 500 ./udid`  
+  a. Allows server binary to bind to 80 & 443 (and other privileged ports < 1024)  
+  b. Changes server binary permissions to read/execute by logged in user
 1. `./udid`  
   a. Starts server to generate TLS Certificate from Let's Encrypt
 1. Navigate to `subdomain.domain.tld/foo` adjust URL (keep `/foo`)  
