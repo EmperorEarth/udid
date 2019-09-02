@@ -41,7 +41,8 @@
   a. Encourages server to generate TLS certificate faster
 1. Refresh until browser receives valid TLS certificate (locked lock icon left of URL in Chrome)  
 1. `ls certificates/` should show a new file `subdomain.domain.tld`  
-1. Using whichever text editor you prefer, copy parts of `certiticates/subdomain.domain.tld` into various files  
+1. Using whichever text editor you prefer, copy parts of `certif
+icates/subdomain.domain.tld` into various files  
   a. Copy from `-----BEGIN EC PRIVATE KEY-----` until `-----END EC PRIVATE KEY-----` into `private-key.pem`  
   b. Copy from the first `-----BEGIN CERTIFICATE-----` until the first `-----END CERTIFICATE-----` into `certificate.pem`  
   c. Copy from the second `-----BEGIN CERTIFICATE-----` until the second `-----END CERTIFICATE-----` into `certificate-authority.pem`
