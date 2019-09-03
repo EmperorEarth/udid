@@ -4,7 +4,6 @@
 * Go for cross-platform single-binary deployment
 * Open-source and private
   * I created this to protect my Ad Hoc testers' privacy
-* [Live demo](https://udid.aliask.co)
 
 ## Rough guide for Ubuntu 18.04 LTS AMD64 VPS
 * No other guide/support will be provided
